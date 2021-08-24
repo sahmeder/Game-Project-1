@@ -1,4 +1,4 @@
-$(function () {
+$(function (start) {
 
     var anim_id;
 
@@ -31,7 +31,7 @@ $(function () {
     var bird_go = 'down';  
     var bird_right_left = 'right';
 
-    var top_angle = 6; 
+    var top_angle = 4; 
     var right_left_angle = 0; 
 
     var move_right = false;  // first players paddle
