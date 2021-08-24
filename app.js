@@ -105,28 +105,28 @@ $(function () {
 
     function left() {    // function for when pole/bar moves left               
         if (parseInt(pole_2.css('left')) > 0) {
-            pole_2.css('left', parseInt(pole_2.css('left')) - 25);
+            pole_2.css('left', parseInt(pole_2.css('left')) - 15);
             move_left = requestAnimationFrame(left);
         }
     }
 
     function right() {  // function for when top pole/bar moves right   
         if (parseInt(pole_2.css('left')) < (container_width - pole_width)) {
-            pole_2.css('left', parseInt(pole_2.css('left')) + 25);
+            pole_2.css('left', parseInt(pole_2.css('left')) + 15);
             move_right = requestAnimationFrame(right);
         }
     }
 
     function left1() { // function for when bottom pole/bar moves left   
         if (parseInt(pole_1.css('left')) > 0) {
-            pole_1.css('left', parseInt(pole_1.css('left')) - 25);
+            pole_1.css('left', parseInt(pole_1.css('left')) - 15);
             move_left1 = requestAnimationFrame(left1);
         }
     }
 
     function right1() {  // function for when bottom pole/bar moves left   
         if (parseInt(pole_1.css('left')) < (container_width - pole_width)) {
-            pole_1.css('left', parseInt(pole_1.css('left')) + 1);
+            pole_1.css('left', parseInt(pole_1.css('left')) + 15);
             move_right1 = requestAnimationFrame(right1);
         }
     }
