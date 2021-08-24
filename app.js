@@ -1,3 +1,5 @@
+
+
 $(function (start) {
 
     var anim_id;
@@ -33,6 +35,8 @@ $(function (start) {
 
     var top_angle = 4; 
     var right_left_angle = 0; 
+
+    
 
     var move_right = false;  // first players paddle
     var move_left = false;
@@ -168,7 +172,7 @@ $(function (start) {
 
     
 
-    function bird_up() {
+    function bird_up() { //function for moving ball up
         bird.css('top', parseInt(bird.css('top')) - (top_angle));
         if (bird_right_left === 'left') {
             bird.css('left', parseInt(bird.css('left')) - (right_left_angle));
@@ -177,7 +181,7 @@ $(function (start) {
         }
     }
 
-    function bird_down() {
+    function bird_down() {  // function for moving ball down
         bird.css('top', parseInt(bird.css('top')) + (top_angle));
         if (bird_right_left === 'left') {
             bird.css('left', parseInt(bird.css('left')) - (right_left_angle));
@@ -190,7 +194,7 @@ $(function (start) {
 
 
 
-    function stop_the_game() {
+    function stop_the_game() {  //function to stop the game once a player scores
 
         cancelAnimationFrame(anim_id);
         cancelAnimationFrame(move_right);

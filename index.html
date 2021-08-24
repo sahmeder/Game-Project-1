@@ -18,6 +18,8 @@
 
 <body>
 
+    <h2>Keys For Player 1: A&S</h2>
+    <h2>Keys For Player 2: Up & Down Arrow Keys</h2>
     <div id="container">
 
         <div id="bird"></div>
@@ -28,7 +30,14 @@
 
         
     </div>
-
+    
+    <script>
+        document.getElementById("demo").onkeypress = function() {myFunction()};
+        
+        function myFunction() {
+          document.getElementById("demo").style.backgroundColor = "red";
+        }
+        </script>
     <button id="restart_btn">Restart</button>
     <script src="app.js"></script>
 
